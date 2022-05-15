@@ -66,7 +66,7 @@ public class StatsServiceTest {
         StatsService manager = new StatsService ();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = manager.countBelowAverageSales (sales);
+        long actual = manager.countAboveAverageSales (sales);
         long expected = 5;
 
         Assertions.assertEquals (expected, actual);
